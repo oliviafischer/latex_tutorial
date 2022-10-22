@@ -1,0 +1,87 @@
+\documentclass[jou, floatsintext, colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{apa7} % sets overall layout; set first argument to 'man' if you don't want it in journal format
+\usepackage[american]{babel} % language settings
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{amsmath} % allows mathematical signs/equations
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{xr}
+\usepackage{array}
+\usepackage{makecell}
+% \externaldocument{main_appendix.tex} % only if you want to source an additional document
+% \usepackage[landscape]{geometry} % if you want landscape format
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex} % Better bibtex version of citations
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{your_library.bib} % this is your (Zotero) library export
+
+\title{Title}
+\shorttitle{}
+\authorsnames{Your Name, Your Co-Author's Name}
+\authorsaffiliations{University of Zurich}
+\leftheader{Name \& Name}
+
+\abstract{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+}
+
+\keywords{keyword 1, keyword 2}
+
+\begin{document} % This is where the document begins
+\maketitle
+
+\section{Introduction}
+
+This is your introduction.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+% See 'biblatex-cheatsheet.pdf' on how to include references from your Zotero library
+% The two most common commands will be:
+% \parencite{} - for citations in parentheses such as "A recent study found that... (Frey, 2021). "
+% \textcite{} - for in-text citations such as "As Steiner & Frey (2021) found, ..."
+
+\section{Methods and procedures}
+
+Another section, perhaps about your methods and procedures.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+
+\subsection{Procedure}
+
+We conducted 2 studies...
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+\subsubsection{Study 1}
+
+In the first study, participants...
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\paragraph{Informed consent and sociodemographic information}
+
+All participants reported...
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Results}
+
+We found that...
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Discussion}
+
+Our results contribute to the literature by...
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\printbibliography % This will format your bibliography nicely for you (make sure the information on all publications in your Zotero library is complete)
+\end{document}
