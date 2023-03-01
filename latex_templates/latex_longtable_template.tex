@@ -1,0 +1,55 @@
+\documentclass[floatsintext, colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{tabularx}
+% \usepackage[landscape]{geometry} % to have document in landscape
+\usepackage[left=2.0cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry} % to control document margins
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{csquotes}
+\usepackage{hyperref} % to embed links (incl. citations)
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{example.bib}
+
+\begin{document}
+\begin{longtable}{| p{7cm} | p{10cm} |} % You can add as many columns as you need; be sure to adjust their width to fit the page
+% the vertical lines '|' indicate the visibility of the vertical lines around your cells.
+% You can delete the vertical lines if you want a more APA-conforming layout.
+
+\caption{Literature review..\label{long1}}\\ % always use the double backslash to indicate the end of a row
+
+\hline % with '\hline' you draw a horizontal line
+% this defines the column names
+\textbf{Citation} & \textbf{Summary}\\ % use the '&' to indicate the next cell within the row
+\hline
+\endfirsthead
+
+\hline
+% If the column spans more than a page, this is what we will see
+\multicolumn{2}{|c|}{Continuation of literature review \ref{long1}}\\
+\hline
+\textbf{Citation} & \textbf{Summary}\\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\multicolumn{2}{| c |}{End of Table}\\
+\hline\hline
+\endlastfoot
+
+% This is where the actual content of the table starts
+\textcite{freyPsychologicalDriversIndividual2021} & This is a central paper because... \\
+\hline
+
+\textcite{steinerRepresentativeDesignPsychological} & This is another interesting paper because... \\
+
+\hline
+
+\end{longtable}
+
+
+\end{document}
