@@ -1,0 +1,124 @@
+\documentclass[11pt, a4paper, colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{newpxtext,newpxmath} % Palatino-based font
+\usepackage{xcolor}
+\usepackage{hyperref} % for clickable links
+
+% Define custom colors
+\definecolor{headercolor}{RGB}{0,0,102}
+\definecolor{subtitlecolor}{RGB}{128,128,128}
+
+% Page margins
+\geometry{left=1in, top=1in, right=1in, bottom=1in}
+
+% Add name and page number to header
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{{Your name}}
+\rhead{{Page \thepage}}
+
+% Custom section format
+\usepackage{sectsty}
+\sectionfont{\large\color{headercolor}}
+\subsectionfont{\normalsize\color{headercolor}}
+
+% Horizontal line after each section header
+\usepackage{titlesec}
+\titleformat{\section}
+  {\large\bfseries\color{headercolor}} % Format
+  {} % Label
+  {0pt} % Separation
+  {} % Before-title code
+  [{\titlerule\vspace{0.5ex}}] % After-title code
+
+\begin{document}
+
+% Title / Header
+\begin{center}
+    {\Huge \textbf{{Your name}}}\\
+    \vspace{2mm}
+    {\Large \textcolor{subtitlecolor}{Curriculum Vitae}}\\
+    \vspace{2mm}
+    \href{mailto:youremail@domain.com}{youremail@domain.com} | \href{yourwebsite.com}{yourwebsite.com}
+\end{center}
+
+\section*{Research Interests}
+Interest I, Interest II, Interest III
+
+
+% Education Section
+\section*{Higher Education}
+\begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}} % Table to separate dates from content
+Year--Year & \textbf{Ph.D. in Field}, University name \\
+Year--Year & \textbf{Master's Degree in Field}, University name \\
+Year--Year & \textbf{Undergraduate/Bachelor's degree in Field}, University name \\
+\end{tabular}
+
+% Employment
+\section*{Research Experience}
+\begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+04/Year--10/Year & \textbf{Position}, Employer name \\
+% Detailed description of your role and achievements.
+Year--Year & \textbf{Position}, Employer name \\
+% Detailed description of your role and achievements.
+\end{tabular}
+
+% Publications
+\section*{Publications and Preprints}
+    \textbf{Last Name, F.}, Co-Author, A., \& Co-Author, B. (Year). Title of your published paper. \textit{Journal Name, Volume}, Issue. \href{https://doi.org/paper-doi}{https://doi.org/paper-doi}\\ 
+    
+    \noindent Co-Author, A., \& \textbf{Last Name, F.} (Year). Title of manuscript. \textit{Pre-print Server}. \newline \href{https://doi.org/manuscript-doi}{https://doi.org/manuscript-doi}
+
+% Awards and Honors
+\section*{Awards and Honors}
+\begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+Year & \textbf{Name of award}, Awarding Institution \\
+\end{tabular}
+
+% Teaching
+\section*{Teaching \& Supervision}
+\begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+Year & \textbf{Title of class}, University Name \\
+\end{tabular}
+
+% Services
+\section*{Services}
+\begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+Year & \textbf{Your service} Name of Institution  \\
+\end{tabular}
+
+\section*{Additional Education}
+\begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+\textbf{External} & \\
+Year & \textbf{Title of course}, Summer School, Place (Country) \\
+& \\
+\textbf{PhD courses} & \\
+Year & \textbf{Title of course} (Instructor: Instructor name) \\
+\end{tabular}
+
+% Skills
+\section*{Skills}
+\begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+Technical & Programming language, Software \\
+& \\
+Languages & Language I (fluent), Language II (beginner)
+\end{tabular}
+
+% Travel Funding
+\section*{Funding}
+\begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+Year & \textbf{Name of grant}, Funding body \\
+\end{tabular}
+
+% Conferences
+\section*{Conference Contributions}
+% \subsection{Presentations}
+\begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+Year & \textbf{Name of conference}: Title of your contribution [Talk] \\
+&  \\
+Year & \textbf{Name of conference}: Title of your contribution [Poster] \\
+\end{tabular}
+\end{document}
